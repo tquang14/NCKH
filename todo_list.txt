@@ -1,0 +1,15 @@
+--------------------ESP------------------------------------------------------------
+RFID:
+	- hàm readRFID(): return về 1 biến String là ID của thẻ
+	- hàm cmpID(const string ID, const string *arrID): return true/false (kiểm tra ID truyền vào có trong mảng hay ko)
+Keypad:
+	- hàm readKeypad(): return về 1 biến kiểu char của phím vừa bấm nếu ko có bấm thì trả về '_' 
+		+ đồng thời hàm cũng tiến hành tăng biến đếm index (index là biến đếm đếm số phím đã nhập vào)
+	- hàm cmpPass(const char* inptPass): return true/false khi so sánh pass đc nhập vs pass đc lưu sẵn (chỉ gọi hàm khi index == 4)
+		+ đồng thời cũng gắn lại index = 0
+Interrupt:
+	- hàm ngắt bật 1 biến global coChay = true khi cảm biến cháy kéo chân __ xuống mức thấp
+	- hàm ngắt bật 1 biến global chuyenDong = true khi cảm biến chuyển động kéo chân __ lên mức cao
+Buzzer:
+	- hàm 
+------------------------****************************-------------------------------
